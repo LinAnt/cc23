@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 import sys
-
-req = 0
-tot_bytes = 0
  
 def main(argv):
+    req = 0
+    tot_bytes = 0
     for line in sys.stdin:
         # remove leading and trailing whitespaces
         line = line.strip()

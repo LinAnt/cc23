@@ -14,9 +14,6 @@ def main(argv):
     current_count = 0
     word = None
 
-    three_letter_words = 0
-    five_letter_words = 0
-
     wc = {}
     for line in sys.stdin:
         # remove leading and trailing whitespaces

@@ -8,16 +8,13 @@ def main(argv):
         line = line.strip() 
         # split the line into words 
         words = line.split()
-        if len(words) != 2:
-            print("not 2 words!")
-
 
         word = words[0]
         amount = int(words[1])
 
         # increase counters 
         if word in wc:
-            count = wc[words[0]]
+            count = wc[word]
             wc[word] = count + amount
         else:
             wc[word] = 1
