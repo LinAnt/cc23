@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 import sys
 
-wc = {}
 for line in sys.stdin: 
     # remove leading and trailing whitespace 
     line = line.strip() 
@@ -9,13 +8,4 @@ for line in sys.stdin:
     words = line.split() 
     # increase counters 
     for word in words: 
-        # count words in current chunk
-        if word in wc:
-            count = wc[word]
-            wc[word] = count + 1
-        else:
-            wc[word] = 1
-
-# print values in same format as before
-for w in wc:
-    print('%s\t%s' % (w, wc[w]))
+        print('%s\t%s' % (word, 1))
