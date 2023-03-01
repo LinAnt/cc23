@@ -8,7 +8,9 @@ for line in sys.stdin:
     # split the line into words 
     words = line.split() 
     # increase counters 
-    for word in words: 
+    for word in words:
+        if not word.isalpha(): # Drop all non alpha words
+            continue
         # count words in current chunk
         if word in wc:
             count = wc[word]
@@ -19,3 +21,6 @@ for line in sys.stdin:
 # print values in same format as before
 for w in wc:
     print('%s\t%s' % (w, wc[w]))
+
+if __name__ == "__main__":
+  main(sys.argv)
