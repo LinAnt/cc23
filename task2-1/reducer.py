@@ -20,8 +20,6 @@ def main(argv):
         req += 1
         tot_bytes += bytes
 
-
-
     print("Total amount of reqs: {}".format(req))
     print("Total transferred GBs: {}".format((tot_bytes/(1024*1024*1024)))) # Ugly conversion to GB
 
