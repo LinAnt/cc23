@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 import sys
 
-wc = {}
-
 def main(argv):
+    wc = {}
     for line in sys.stdin: 
         # remove leading and trailing whitespace 
         line = line.strip() 
